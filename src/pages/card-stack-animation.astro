@@ -1,0 +1,33 @@
+---
+import '../styles/card-stack-animation/styles.scss';
+
+import Layout from '../layouts/Layout.astro';
+import Img from '../components/card-stack-animation/Img.astro';
+---
+
+<Layout title="Card Stack Animation">
+  <div class="container">
+    <nav>
+      <a href="#">Neural Nuance</a>
+      <a href="#">Showreel</a>
+    </nav>
+    <main>
+      <div class="header">
+        <div class="text">
+          <p>In a futurer</p><div class="text-revealer"></div>
+        </div>
+        <div class="text">
+          <p>not too distant</p><div class="text-revealer"></div>
+        </div>
+      </div>
+      <div class="gallery">
+        {[...Array(12)].map((_, index) => <Img key={index} />)}
+      </div>
+    </main>
+    <footer>
+      <a href="#">Behance</a>
+      <a href="#">Catalog</a>
+    </footer>
+  </div>
+  <script src="../scripts/card-stack-animation/scripts.js"></script>
+</Layout>

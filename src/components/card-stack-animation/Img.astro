@@ -1,0 +1,7 @@
+---
+const { key } = Astro.props;
+---
+
+<div class="img" key={key}>
+  <img src=`https://source.unsplash.com/random/500x500?sig=${key}` alt="" />
+</div>
