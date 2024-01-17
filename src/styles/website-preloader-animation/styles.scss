@@ -1,0 +1,127 @@
+@import '../functions.scss';
+
+.website-preloader-animation {
+  font-family: 'Aeonik_OVERVIEW';
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  pointer-events: none;
+}
+
+.counter {
+  font-size: px-to-rem(100px);
+  font-weight: 400;
+  line-height: px-to-rem(102px);
+  position: fixed;
+  display: flex;
+  height: px-to-rem(100px);
+  left: px-to-rem(50px);
+  bottom: px-to-rem(50px);
+  clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+}
+
+.counter-1,
+.counter-2,
+.counter-3 {
+  position: relative;
+  top: px-to-rem(-15px);
+}
+
+.num1offset1 {
+  position: relative;
+}
+
+.num1offset2 {
+  position: relative;
+  right: px-to-rem(-10px);
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: px-to-rem(300px);
+  height: px-to-rem(50px);
+  transform: translate(-50%, -50%);
+  background-color: rgb(80, 80, 80);
+}
+
+.loader-1 {
+  position: relative;
+  background-color: #fff;
+  width: px-to-rem(200px);
+}
+
+.loader-2 {
+  position: relative;
+  background-color: #fff;
+  width: px-to-rem(100px);
+}
+
+.bar {
+  height: px-to-rem(50px);
+}
+
+.website-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.header {
+  position: relative;
+  width: max-content;
+  height: max-content;
+
+  .h1 {
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      top: px-to-rem(80px);
+      margin: 0 px-to-rem(10px);
+    }
+  }
+}
+
+.h1 {
+  display: flex;
+}
+
+h1 {
+  font-size: px-to-rem(80px);
+}
+
+.header-revealer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: px-to-rem(80px);
+    left: 0;
+    width: 105%;
+    height: 110%;
+    background-color: #fff;
+  }
+}
