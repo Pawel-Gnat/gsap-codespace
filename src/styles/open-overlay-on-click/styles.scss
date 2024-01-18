@@ -1,0 +1,149 @@
+@import '../functions.scss';
+
+.open-overlay-on-click {
+  position: relative;
+  font-family: 'Aeonik';
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.item {
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.item-index {
+  flex: 1;
+}
+
+.item-name {
+  flex: 4;
+}
+
+.item-year {
+  flex: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 70%;
+  height: px-to-rem(700px);
+  bottom: px-to-rem(-1200px);
+  right: 0;
+  padding: 2rem;
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+  will-change: bottom;
+  transform: translateZ(0) rotate(20deg);
+  transform-origin: bottom center;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.img-container {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.col:nth-child(1) {
+  flex: 3;
+}
+
+.col:nth-child(2) {
+  flex: 2;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  opacity: 0.4;
+}
+
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0 4rem 0;
+
+  p:nth-child(1) {
+    flex: 3;
+  }
+
+  p:nth-child(2) {
+    flex: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .items {
+    width: 100%;
+    bottom: 8rem;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+  }
+}

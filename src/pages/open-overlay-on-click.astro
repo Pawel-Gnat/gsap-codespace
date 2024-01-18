@@ -1,0 +1,113 @@
+---
+import '../styles/open-overlay-on-click/styles.scss';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Open Overlay On Click">
+  <div class="open-overlay-on-click">
+    <nav>
+      <p>Nanotech</p>
+      <p>Showreel</p>
+    </nav>
+    <div class="overlay">
+      <div class="overlay-header">
+        <div class="col">
+          <h1 class="item-name" id="item-name">Item Name</h1><p
+            class="item-category"
+            id="item-category"
+          >
+            Item Category
+          </p>
+        </div>
+        <div class="col">
+          <button class="close-btn" id="close-btn">Close</button>
+        </div>
+      </div>
+      <div class="item-details">
+        <p><a id="item-link" class="item-link" href="#">View Site</a></p>
+        <p id="item-copy" class="item-copy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+          tenetur veniam quasi adipisci asperiores sapiente blanditiis
+          voluptatum iusto obcaecati totam soluta enim autem cupiditate illo
+          velit, in ipsum deleniti minima?
+        </p>
+      </div>
+      <div class="img-container">
+        <img
+          class="item-img"
+          id="item-img"
+          src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container">
+      <div class="items">
+        <div class="item">
+          <div class="item-index">01</div><div class="item-name">
+            Item Name 1
+          </div>
+          <div class="item-year">2023</div>
+        </div>
+        <div class="item">
+          <div class="item-index">02</div><div class="item-name">
+            Item Name 2
+          </div>
+          <div class="item-year">2021</div>
+        </div>
+        <div class="item">
+          <div class="item-index">03</div><div class="item-name">
+            Item Name 3
+          </div>
+          <div class="item-year">2017</div>
+        </div>
+        <div class="item">
+          <div class="item-index">04</div><div class="item-name">
+            Item Name 4
+          </div>
+          <div class="item-year">2023</div>
+        </div>
+        <div class="item">
+          <div class="item-index">05</div><div class="item-name">
+            Item Name 5
+          </div>
+          <div class="item-year">2015</div>
+        </div>
+        <div class="item">
+          <div class="item-index">06</div><div class="item-name">
+            Item Name 6
+          </div>
+          <div class="item-year">2020</div>
+        </div>
+        <div class="item">
+          <div class="item-index">07</div><div class="item-name">
+            Item Name 7
+          </div>
+          <div class="item-year">2018</div>
+        </div>
+        <div class="item">
+          <div class="item-index">08</div><div class="item-name">
+            Item Name 8
+          </div>
+          <div class="item-year">2021</div>
+        </div>
+        <div class="item">
+          <div class="item-index">09</div><div class="item-name">
+            Item Name 9
+          </div>
+          <div class="item-year">2023</div>
+        </div>
+        <div class="item">
+          <div class="item-index">10</div><div class="item-name">
+            Item Name 10
+          </div>
+          <div class="item-year">2017</div>
+        </div>
+      </div>
+    </div>
+
+    <footer><p>Codespace 2023 &copy;</p></footer>
+  </div>
+  <script src="../scripts/open-overlay-on-click/scripts.js"></script>
+</Layout>
