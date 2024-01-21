@@ -1,0 +1,87 @@
+---
+import '../styles/responsive-screen-menu-clip-mask/styles.scss';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Responsive Screen Menu Clip Mask">
+  <div class="responsive-screen-menu-clip-mask">
+    <nav>
+      <div class="nav-items">
+        <div class="logo">
+          <div class="link"><a href="#">Grid</a></div>
+        </div>
+
+        <div class="links">
+          <div class="link"><a href="#">Technology</a></div>
+          <div class="link"><a href="#">Solutions</a></div>
+          <div class="link"><a href="#">Newsroom</a></div>
+          <div class="link"><a href="#">Company</a></div>
+        </div>
+      </div>
+
+      <div class="nav-subitems">
+        <div class="toggle">
+          <img src="responsive-screen-menu-clip-mask/toggle.svg" alt="" />
+        </div>
+        <div class="subitems-link">
+          <div class="link"><a href="#">Book a Demo</a></div>
+          <div class="link"><a href="#">Let's talk</a></div>
+        </div>
+      </div>
+    </nav>
+
+    <video
+      src="responsive-screen-menu-clip-mask/hero.mp4"
+      autoplay
+      muted
+      loop
+      id="hero"
+      class="hero-video"
+    >
+      <source
+        src="responsive-screen-menu-clip-mask/hero.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <div class="container">
+      <div class="menu">
+        <div class="col">
+          <div class="logo"><p>Grid</p></div>
+          <div class="links">
+            <div class="link"><a href="#">Technology</a></div>
+            <div class="link"><a href="#">Solutions</a></div>
+            <div class="link"><a href="#">Company</a></div>
+            <div class="link"><a href="#">Newsroom</a></div>
+            <div class="link"><a href="#">Try Grid</a></div>
+            <div class="link"><a href="#">FAQ</a></div>
+            <div class="link"><a href="#">Login</a></div>
+            <div class="link"><a href="#">Documentation</a></div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="tagline">
+            <p>Automotive Intelligence</p>
+            <button class="close-btn"
+              ><img
+                src="responsive-screen-menu-clip-mask/close.svg"
+                alt=""
+              /></button
+            >
+          </div>
+          <div class="links flex">
+            <div class="link">
+              <a href="#">Talk with a support at Grid</a>
+            </div>
+            <div class="link"><a href="#">Book a Demo</a></div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/responsive-screen-menu-clip-mask/scripts.js"></script>
+</Layout>
