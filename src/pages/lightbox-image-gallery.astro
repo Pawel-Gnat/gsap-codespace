@@ -1,0 +1,114 @@
+---
+import '../styles/lightbox-image-gallery/styles.scss';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Lightbox Image Gallery">
+  <div class="lightbox-image-gallery">
+    <nav>
+      <div class="col">
+        <p>Shadows</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          voluptatibus excepturi laudantium, aut ut at neque eligendi reiciendis
+          quas molestiae ea assumenda quia eaque doloribus voluptatum nam animi
+          consequatur? Eligendi.
+        </p>
+      </div><div class="copy">
+        <p>Light Explorations</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in
+          amet distinctio doloribus, pariatur natus sequi saepe tempore unde
+          maxime expedita labore necessitatibus vitae quasi impedit quae!
+          Tempora, blanditiis sint.
+        </p>
+      </div>
+      <div class="col">
+        <div class="copy">
+          <p>Clay</p><p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+            cupiditate? Magnam magni, autem quia ratione ut iure inventore omnis
+            natus dolor? Sapiente suscipit eligendi ipsum adipisci reprehenderit
+            at autem corporis.
+          </p>
+        </div>
+        <div class="copy">
+          <p>Concrete Formula</p><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat
+            numquam obcaecati facilis eligendi necessitatibus vel libero quae,
+            aliquid cumque animi ipsam impedit vitae incidunt corporis
+            praesentium voluptatum cum. Consectetur.
+          </p>
+        </div>
+        <div class="copy">
+          <p>Concrete Formula</p><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat
+            numquam obcaecati facilis eligendi necessitatibus vel libero quae,
+            aliquid cumque animi ipsam impedit vitae incidunt corporis
+            praesentium voluptatum cum. Consectetur.
+          </p>
+        </div>
+        <div class="copy">
+          <p>Concrete Formula</p><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et placeat
+            numquam obcaecati facilis eligendi necessitatibus vel libero quae,
+            aliquid cumque animi ipsam impedit vitae incidunt corporis
+            praesentium voluptatum cum. Consectetur.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <p class="logo">1-101</p>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="gallery">
+        <div class="row">
+          <div class="item">
+            <div class="index"><p>1</p></div><div class="img">
+              <img
+                src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="index"><p>2</p></div><div class="img">
+              <img
+                src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="index"><p>3</p></div><div class="img">
+              <img
+                src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="index"><p>4</p></div><div class="img">
+              <img
+                src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview-container">
+            <img
+              src=`https://source.unsplash.com/random/500x500?sig=${Math.random()}`
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/lightbox-image-gallery/scripts.js"></script>
+</Layout>
